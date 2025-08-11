@@ -2,10 +2,23 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Program HTML Sederhana</title>
+    <title>Pilih Lagu</title>
 </head>
 <body>
-    <h1>Halo, Dunia!</h1>
-    <p>Ini adalah contoh program HTML sederhana.</p>
-</body>
-</html>
+    <h1>Pilih Lagu Favorit Anda</h1>
+    <form>
+        <label for="lagu">Pilih lagu:</label>
+        <select id="lagu" name="lagu">
+            <option value="lagu1">Lagu 1 - Judul A</option>
+            <option value="lagu2">Lagu 2 - Judul B</option>
+            <option value="lagu3">Lagu 3 - Judul C</option>
+        </select>
+        <button type="button" onclick="tampilkanPilihan()">Pilih</button>
+    </form>
+    <p id="hasil"></p>
+
+    <script>
+        function tampilkanPilihan() {
+            var select = document.getElementById("lagu");
+            var pilihan = select.options[select.selectedIndex].text;
+            document.getElementById("hasil").innerText = "Anda
