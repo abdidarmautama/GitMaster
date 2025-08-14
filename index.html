@@ -1,72 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profil Perusahaan</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        header { text-align: center; padding: 20px; }
+        section { margin-bottom: 20px; }
+        h2 { color: #2c3e50; }
+    </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">Beranda</a></li>
-        <li><a href="#">Profil Kami</a></li>
-        <li><a href="#">Visi dan Misi</a></li>
-        <li><a href="#">Kirim Pesan</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <h1>Nama Perusahaan Anda</h1>
+        <p>Motto atau tagline perusahaan</p>
+    </header>
 
-  <main>
-    <section class="hero">
-      <img src="RevoU favicon.svg" alt="Spanduk Foto">
-      <h1>Tentang Perusahaan</h1>
-      <p>Deskripsi singkat tentang perusahaan.</p>
+    <section id="tentang">
+        <h2>Tentang Kami</h2>
+        <p>Deskripsi singkat tentang perusahaan, visi, misi, dan sejarah singkat.</p>
     </section>
 
-    <section class="profile" id="profile">
-      <h2>Profil Kami</h2>
-      <div class="profile-content">
-        <div class="profile-item">
-          <img src="profile1.jpg" alt="Foto Profil 1">
-          <h3>Nama Karyawan 1</h3>
-          <p>Deskripsi singkat tentang karyawan 1.</p>
-        </div>
-        <div class="profile-item">
-          <img src="profile2.jpg" alt="Foto Profil 2">
-          <h3>Nama Karyawan 2</h3>
-          <p>Deskripsi singkat tentang karyawan 2.</p>
-        </div>
-        <div class="profile-item">
-          <img src="profile3.jpg" alt="Foto Profil 3">
-          <h3>Nama Karyawan 3</h3>
-          <p>Deskripsi singkat tentang karyawan 3.</p>
-        </div>
-      </div>
+    <section id="layanan">
+        <h2>Layanan</h2>
+        <ul>
+            <li>Layanan 1</li>
+            <li>Layanan 2</li>
+            <li>Layanan 3</li>
+        </ul>
     </section>
 
-    <section class="contact" id="contact">
-      <h2>Kirim Pesan kepada Kami</h2>
-      <form id="contact-form">
-        <label for="name">Nama:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Pesan:</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <button type="submit">Kirim</button>
-      </form>
+    <section id="kontak">
+        <h2>Kontak</h2>
+        <p>Email: info@perusahaan.com</p>
+        <p>Telepon: 0812-3456-7890</p>
+        <p>Alamat: Jalan Contoh No.123, Kota</p>
     </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2023 Nama Perusahaan. Hak cipta dilindungi.</p>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
