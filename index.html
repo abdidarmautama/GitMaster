@@ -1,188 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #000;
-            color: white;
-            padding: 10px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        header .logo {
-            font-weight: bold;
-            font-size: 24px;
-        }
-        header nav a {
-            color: white;
-            text-decoration: none;
-            padding: 8px 15px;
-            border-radius: 5px;
-            margin-left: 10px;
-        }
-        header nav a:hover, header nav a.active {
-            background-color: #333;
-        }
-        .container {
-            padding: 20px 40px;
-        }
-        h1, h2 {
-            color: #333;
-        }
-        .profile-gallery, .portfolio-gallery {
-            display: grid;
-            grid-gap: 20px;
-        }
-        .profile-gallery {
-            grid-template-columns: repeat(4, 1fr);
-        }
-        .portfolio-gallery {
-             grid-template-columns: repeat(4, 1fr);
-        }
-        .profile-gallery img, .portfolio-gallery img {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-            background-color: #ddd;
-        }
-        .message-us {
-            margin-top: 30px;
-        }
-        .message-us form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            max-width: 500px;
-        }
-        .message-us label {
-            font-weight: bold;
-        }
-        .message-us input[type="text"],
-        .message-us input[type="date"],
-        .message-us textarea {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            width: 100%;
-        }
-        .message-us .radio-group {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .message-us button {
-            padding: 10px 20px;
-            background-color: #0056b3;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            align-self: flex-start;
-        }
-        .message-us button:hover {
-            background-color: #004494;
-        }
-        hr {
-            border: 0;
-            height: 1px;
-            background-color: #ddd;
-            margin: 30px 0;
-        }
-    </style>
-</head>
-<body>
+<html lang="id">
 
-    <header>
-        <div class="logo">
-            <img src="https://placehold.co/40x40.png" alt="logo" data-ai-hint="logo circle">
-        </div>
-        <nav>
-            <a href="#home" class="active">Home</a>
-            <a href="#profile">Our Profile</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#message-us">Message Us</a>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My website</title>
 
-    <div class="container">
-        <section id="home">
-            <h1>Hi, Welcome to My Website</h1>
-            <p>Selamat datang di website kami!</p>
-            <p>Kami hadir untuk memberikan informasi, inspirasi, dan layanan terbaik bagi Anda. Temukan profil kami, dan jangan ragu untuk mengirimkan pesan melalui fitur Message Us.</p>
-        </section>
+        <!-- CSS External -->
+        <link rel="stylesheet" href="css/style.css">
 
-        <hr>
+        <!-- Tailwind CSS CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-        <section id="profile">
-            <h2>Our Profile</h2>
+    </head>
 
-        </section>
-        
-        <hr>
 
-        <section id="portfolio">
-            <h2>Portfolio</h2>
-        </section>
+    <body>
+        <!-- Header -->
+    <header class="flex items-center justify-between pb-0 bg-black h-20 px-8 min-w-0">
+            <!-- Logo Icon -->
+            <div class="bg-blue-500 rounded-full h-18 w-18 my-2 flex items-center justify-center overflow-hidden">
+                <img src="img/RevoU favicon.svg" alt="Logo RevoU" class="h-18 w-18 object-contain" />
+            </div>
 
-        <hr>
+            <nav class="flex flex-wrap gap-2 mr-2">
+                <ul class="flex flex-wrap space-x-2 text-white font-semibold">
+                    <li><a href="#" class="px-11 py-3 bg-blue-900 text-white rounded-2xl hover:bg-blue-600 transition">Home</a></li>
+                    <li><a href="#" class="px-5 py-3 bg-blue-900 text-white rounded-2xl hover:bg-blue-600 transition">Our Profile</a></li>
+                    <li><a href="#" class="px-5 py-3 bg-blue-900 text-white rounded-2xl hover:bg-blue-600 transition">Portofolio</a></li>
+                    <li><a href="#section-message" class="px-4 py-3 bg-blue-900 text-white rounded-2xl hover:bg-blue-600 transition">Message Us</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <section id="message-us" class="message-us">
-            <h2>Message Us</h2>
-            <form id="contact-form">
-                <div>
-                    <label for="name">Nama:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div>
-                    <label for="dob">Tanggal Lahir:</label>
-                    <input type="date" id="dob" name="dob" required>
-                </div>
-                <div>
-                    <label>Jenis Kelamin:</label>
-                    <div class="radio-group">
-                        <input type="radio" id="male" name="gender" value="Laki-laki" required>
-                        <label for="male">Laki-laki</label>
-                        <input type="radio" id="female" name="gender" value="Perempuan">
-                        <label for="female">Perempuan</label>
-                    </div>
-                </div>
-                <div>
-                    <label for="message">Pesan:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    </div>
-
-    <script>
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
+        <!-- Main -->
+        <main class="flex flex-col px-8 mt-8 space-y-8" style="margin-bottom: 80px; height: 80vh; margin-top: 90px;">
             
-            const name = document.getElementById('name').value;
-            const dob = document.getElementById('dob').value;
-            const gender = document.querySelector('input[name="gender"]:checked').value;
-            const message = document.getElementById('message').value;
-            
-            const alertMessage = `Name: ${name}\nTanggal Lahir: ${dob}\nJenis Kelamin: ${gender}\nPesan: ${message}`;
-            
-            alert(alertMessage);
-            
-            // Clear form
-            document.getElementById('contact-form').reset();
-        });
-    </script>
+            <!-- Section Main -->
+            <section class="bg-white rounded-xl shadow p-6" style="height: 200px ;">
+                <h1 class="text-2xl font-bold text-gray-900">Hi, Welcome to Website</h1>
+            </section>
 
-</body>
+            <!-- Section Profile -->
+            <section class="bg-white rounded-xl shadow p-6" style="height:100%;">
+                    <h2 class="text-xl font-semibold text-gray-900">Our Profile</h2>
+                    <img src="img/profile.png" alt="Profile" style="width:80vw; max-width:600px; border-radius:12px; margin:16px 0; display:block;" />
+            </section>
+
+            <!-- Section Portofolio -->
+            <section class="bg-white rounded-xl shadow p-6" style="height:100%;">
+                    <h2 class="text-xl font-semibold text-gray-900">Our Portofolio</h2>
+                    <img src="img/portofolio.png" alt="Portofolio" style="width:80vw; max-width:600px; border-radius:12px; margin:16px 0; display:block;" />
+            </section>
+
+            <!-- Section Message -->
+            <section id="section-message" class="bg-white rounded-xl shadow p-6 flex flex-wrap" style="height:40%; min-height:300px;">
+            
+                <!-- Kolom Form -->
+                <div class="flex flex-col justify-start items-start" style="width:40%; min-width:250px; margin-left:2rem;">
+                    <form class="w-full">
+                        <div class="flex items-center mb-2 w-full">
+                            <label for="nama" class="text-xs" style="width:90px;">Nama:</label>
+                            <input type="text" id="nama" name="nama" class="text-xs border border-black px-1 py-1 rounded w-2/3" />
+                        </div>
+                        <div class="flex items-center mb-2 w-full">
+                            <label for="tanggal" class="text-xs" style="width:90px;">Tanggal Lahir:</label>
+                            <input type="date" id="tanggal" name="tanggal" class="text-xs border border-black px-1 py-1 rounded w-2/3" />
+                        </div>
+                        <div class="flex items-center mb-2 w-full">
+                            <span class="text-xs" style="width:90px;">Jenis Kelamin:</span>
+                            <input type="radio" id="lk" name="gender" value="Laki-laki" class="ml-2" />
+                            <label for="lk" class="text-xs ml-1 mr-3">Laki-laki</label>
+                            <input type="radio" id="pr" name="gender" value="Perempuan" class="ml-2" />
+                            <label for="pr" class="text-xs ml-1">Perempuan</label>
+                        </div>
+                        <div class="flex items-center mb-2 w-full">
+                            <label for="pesan" class="text-xs" style="width:90px;">Pesan:</label>
+                            <textarea id="pesan" name="pesan" rows="4" class="text-xs border border-black px-1 py-1 rounded w-2/3 resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="mt-2 px-3 py-1 bg-blue-900 text-white rounded-2xl hover:bg-blue-600 transition text-xs">Submit</button>
+                    </form>
+                </div>
+
+                <!-- Kolom Output -->
+                <div style="width:50%; min-width:250px;">
+                    <div id="output-message" style="width:100%;"></div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-black text-white text-right py-2 pr-10 fixed bottom-0 w-full">
+            Create by Abdi Darma Utama &mdash; All rights reserved
+        </footer>
+
+        <!-- JavaScript External -->
+        <script src="js/script.js"></script>
+    
+    </body>
 </html>
