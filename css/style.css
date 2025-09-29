@@ -67,40 +67,52 @@ nav a:hover {
 form input,
 form textarea {
 	border: 1px solid #6366f1;
+	/* Custom classes for moved inline styles from index.html */
+	.custom-main {
 	border-radius: 8px;
 	padding: 6px 10px;
 	font-size: 0.95rem;
 	margin-bottom: 8px;
+	.custom-section-main {
 	width: 100%;
 	box-sizing: border-box;
+	.custom-section-profile {
 }
 
+	.custom-img-profile {
 form button {
 	background: #6366f1;
 	color: #fff;
 	border: none;
 	border-radius: 16px;
 	padding: 8px 24px;
+	.custom-section-portofolio {
 	font-size: 1rem;
 	cursor: pointer;
+	.custom-img-portofolio {
 	box-shadow: 0 2px 8px rgba(99,102,241,0.12);
 	transition: background 0.2s;
 }
 form button:hover {
 	background: #4338ca;
 }
+	.custom-section-message {
 
 @media (max-width: 700px) {
 	main {
+	.custom-form-col {
 		padding: 8px !important;
 	}
 	section {
 		margin-bottom: 12px;
+	.custom-label {
 		padding: 12px !important;
 	}
+	.custom-output-col {
 	header {
 		flex-direction: column;
 		height: auto !important;
+	.custom-output-message {
 		padding: 12px !important;
 	}
 	nav ul {

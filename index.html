@@ -33,48 +33,48 @@
         </header>
 
         <!-- Main -->
-        <main class="flex flex-col px-8 mt-8 space-y-8" style="margin-bottom: 80px; height: 80vh; margin-top: 90px;">
+    <main class="flex flex-col px-8 mt-8 space-y-8 custom-main">
             
             <!-- Section Main -->
-            <section class="bg-white rounded-xl shadow p-6" style="height: 200px ;">
+            <section class="bg-white rounded-xl shadow p-6 custom-section-main">
                 <h1 class="text-2xl font-bold text-gray-900">Hi, Welcome to Website</h1>
             </section>
 
             <!-- Section Profile -->
-            <section class="bg-white rounded-xl shadow p-6" style="height:100%;">
+            <section class="bg-white rounded-xl shadow p-6 custom-section-profile">
                     <h2 class="text-xl font-semibold text-gray-900">Our Profile</h2>
-                    <img src="img/profile.png" alt="Profile" style="width:80vw; max-width:600px; border-radius:12px; margin:16px 0; display:block;" />
+                    <img src="img/profile.png" alt="Profile" class="custom-img-profile" />
             </section>
 
             <!-- Section Portofolio -->
-            <section class="bg-white rounded-xl shadow p-6" style="height:100%;">
+            <section class="bg-white rounded-xl shadow p-6 custom-section-portofolio">
                     <h2 class="text-xl font-semibold text-gray-900">Our Portofolio</h2>
-                    <img src="img/portofolio.png" alt="Portofolio" style="width:80vw; max-width:600px; border-radius:12px; margin:16px 0; display:block;" />
+                    <img src="img/portofolio.png" alt="Portofolio" class="custom-img-portofolio" />
             </section>
 
             <!-- Section Message -->
-            <section id="section-message" class="bg-white rounded-xl shadow p-6 flex flex-wrap" style="height:40%; min-height:300px;">
+            <section id="section-message" class="bg-white rounded-xl shadow p-6 flex flex-wrap custom-section-message">
             
                 <!-- Kolom Form -->
-                <div class="flex flex-col justify-start items-start" style="width:40%; min-width:250px; margin-left:2rem;">
+                <div class="flex flex-col justify-start items-start custom-form-col">
                     <form class="w-full">
                         <div class="flex items-center mb-2 w-full">
-                            <label for="nama" class="text-xs" style="width:90px;">Nama:</label>
+                            <label for="nama" class="text-xs custom-label">Nama:</label>
                             <input type="text" id="nama" name="nama" class="text-xs border border-black px-1 py-1 rounded w-2/3" />
                         </div>
                         <div class="flex items-center mb-2 w-full">
-                            <label for="tanggal" class="text-xs" style="width:90px;">Tanggal Lahir:</label>
+                            <label for="tanggal" class="text-xs custom-label">Tanggal Lahir:</label>
                             <input type="date" id="tanggal" name="tanggal" class="text-xs border border-black px-1 py-1 rounded w-2/3" />
                         </div>
                         <div class="flex items-center mb-2 w-full">
-                            <span class="text-xs" style="width:90px;">Jenis Kelamin:</span>
+                            <span class="text-xs custom-label">Jenis Kelamin:</span>
                             <input type="radio" id="lk" name="gender" value="Laki-laki" class="ml-2" />
                             <label for="lk" class="text-xs ml-1 mr-3">Laki-laki</label>
                             <input type="radio" id="pr" name="gender" value="Perempuan" class="ml-2" />
                             <label for="pr" class="text-xs ml-1">Perempuan</label>
                         </div>
                         <div class="flex items-center mb-2 w-full">
-                            <label for="pesan" class="text-xs" style="width:90px;">Pesan:</label>
+                            <label for="pesan" class="text-xs custom-label">Pesan:</label>
                             <textarea id="pesan" name="pesan" rows="4" class="text-xs border border-black px-1 py-1 rounded w-2/3 resize-none"></textarea>
                         </div>
                         <button type="submit" class="mt-2 px-3 py-1 bg-blue-900 text-white rounded-2xl hover:bg-blue-600 transition text-xs">Submit</button>
@@ -82,8 +82,8 @@
                 </div>
                 
                 <!-- Kolom Output -->
-                <div style="width:50%; min-width:250px;">
-                    <div id="output-message" style="width:100%;"></div>
+                <div class="custom-output-col">
+                    <div id="output-message" class="custom-output-message"></div>
                 </div>
             </section>
         </main>
@@ -96,7 +96,6 @@
         <!-- JavaScript External -->
         <script src="js/script.js"></script>
         
-1
 
     </body>        
 </html>
